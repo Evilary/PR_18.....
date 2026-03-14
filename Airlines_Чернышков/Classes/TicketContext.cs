@@ -14,7 +14,7 @@ namespace Airlines_Чернышков.Classes
         {
             List<TicketContext> allTickets = new List<TicketContext>();
 
-            string connStr = "server=localhost;port=3306;database=Airlines_chern;uid=root;pwd=;";
+            string connStr = "server=localhost;port=3306;database=airlines_chern;uid=root;pwd=;";
 
             using (var connection = new MySqlConnection(connStr))
             {
