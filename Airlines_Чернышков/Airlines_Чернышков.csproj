@@ -170,6 +170,11 @@
   <ItemGroup>
     <Resource Include="Images\plane.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\WorkingBD\WorkingBD.csproj">
+      <Project>{2f328bb4-b0b1-487c-b0e1-feee023e069a}</Project>
+      <Name>WorkingBD</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
