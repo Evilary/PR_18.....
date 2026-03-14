@@ -13,10 +13,10 @@
         <Label Content="Лучший способ купить авиабилеты дешево" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,148,0,0" FontSize="15"/>
 
         <Label Content="Откуда:" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="202,193,0,0" FontWeight="Bold"/>
-        <TextBox Width="400" Height="25" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,225,0,0" />
+        <TextBox x:Name="from" Width="400" Height="25" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,225,0,0" />
         <Label Content="Куда:" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="202,259,0,0" RenderTransformOrigin="0.728,1.079" FontWeight="Bold"/>
-        <TextBox Width="400" Height="25" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,290,0,0" />
+        <TextBox x:Name="to" Width="400" Height="25" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,290,0,0" />
 
-        <Button VerticalAlignment="Top" HorizontalAlignment="Right" Width="150" Height="35" Content="Найти" Margin="0,335,200,0" Foreground="White" Background="#FFFF4600" FontWeight="Bold" FontSize="15" />
+        <Button VerticalAlignment="Top" HorizontalAlignment="Right" Width="150" Height="35" Content="Найти" Margin="0,335,200,0" Foreground="White" Background="#FFFF4600" FontWeight="Bold" FontSize="15" Click="Search" />
     </Grid>
 </Page>
