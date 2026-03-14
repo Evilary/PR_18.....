@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Airlines_Чернышков.Classes;
 
 namespace Airlines_Чернышков.Elements
 {
@@ -20,9 +21,24 @@ namespace Airlines_Чернышков.Elements
     /// </summary>
     public partial class Item : UserControl
     {
-        public Item()
+        public Item(TicketContext Ticket)
         {
             InitializeComponent();
+
+            lprice.Content = Ticket.Price + " ₽";
+            fromTime.Content = Ticket.StartTime.ToString("HH:mm");
+            fromDate.Content = Ticket.StartTime.ToString("MM.dd.yyyy");
+            from.Content = Ticket.From;
+            toTime.Content = Ticket.EndTime.ToString("HH:mm");
+            toDate.Content = Ticket.EndTime.ToString("MM.dd.yyyy");
+            to.Content = Ticket.To;
+
+            TimeSpan WayTime = Ticket.EndTime.Subtract(Ticket.StartTime);
+            string sHours = WayTime.Hours.ToString();
+            if (WayTime.Hours < 10) sHours = "0" + WayTime.Hours;
+            string sMinute = WayTime.Minutes.ToString();
+            if (WayTime.Minutes < 10) sMinute = "0" + WayTime.Minutes;
+            way.Content = "в пути" + sHours + ":" + sMinute;
         }
     }
 }

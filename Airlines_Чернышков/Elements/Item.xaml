@@ -16,33 +16,29 @@
 
 
         </Grid.ColumnDefinitions>
-        <Label Content="1999 ₽" Margin="10,29,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" UseLayoutRounding="True"/>
+        <Label x:Name="lprice" Content="1999 ₽" Margin="10,29,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" UseLayoutRounding="True"/>
         <Button Content="Подробнее"  Margin="10,77,10,0" VerticalAlignment="Top" Height="25" Background="#FFFF4600" Foreground="White"/>
+        
+        
+        
         <Label Grid.Column="1" Content="Победа"  Margin="10,10,10,0" VerticalAlignment="Top"/>
-        <Label Grid.Column="1" Content="05:00"  Margin="10,41,10,0" VerticalAlignment="Top" FontSize="16"/>
-        <Label Grid.Column="1" Content="09.12.2023"  Margin="10,77,10,0" VerticalAlignment="Top"/>
-        <Label Grid.Column="1" Content="Победа"  Margin="10,108,10,0" VerticalAlignment="Top"/>
-        <Label Grid.Column="1" Content="Победа"  Margin="10,10,10,0" VerticalAlignment="Top"/>
+        <Label x:Name="fromTime" Grid.Column="1" Content="05:00"  Margin="10,41,10,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="fromDate" Grid.Column="1" Content="09.12.2023"  Margin="10,77,10,0" VerticalAlignment="Top"/>
+        <Label x:Name="from" Grid.Column="1" Content="Пермь"  Margin="10,108,10,0" VerticalAlignment="Top"/>
+        
 
         <Image Grid.Column="2" HorizontalAlignment="Left" Height="30" Margin="10,34,0,0" VerticalAlignment="Top" Width="30" Source="/Images/plane.png"/>
         <Grid Grid.Column="2" Background="#939393" Height="5" Margin="5,70,5,0" VerticalAlignment="Top"/>
+        <Image Grid.Column="2" HorizontalAlignment="Right" Height="30" Margin="0,34,10,0" VerticalAlignment="Top" Width="30" Source="/Images/plane.png"/>
 
 
-        <Label Grid.Column="3" Content="05:00"  Margin="10,41,10,0" VerticalAlignment="Top" FontSize="16"/>
-        <Label Grid.Column="3" Content="09.12.2023"  Margin="10,77,10,0" VerticalAlignment="Top"/>
-        <Label Grid.Column="3" Content="Победа"  Margin="10,108,10,0" VerticalAlignment="Top"/>
-        <Label Grid.Column="3" Content="Победа"  Margin="10,10,10,0" VerticalAlignment="Top"/>
-        <Image Grid.Column="2" HorizontalAlignment="Left" Height="30" Margin="340,35,0,0" VerticalAlignment="Top" Width="30" Source="/Images/plane.png" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90.391"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <Label Grid.Column="2" Content="в пути 2 часа 55 минут"  Margin="44.6,35,34.4,0" VerticalAlignment="Top" HorizontalContentAlignment="Center"/>
+
+        <Label x:Name="to" Grid.Column="3" Content="Победа"  Margin="10,108,10,0" VerticalAlignment="Top"/>
+        <Label x:Name="toTime" Grid.Column="3" Content="05:00"  Margin="10,41,10,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="toDate" Grid.Column="3" Content="09.12.2023"  Margin="10,77,10,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="3" Content="Победа"  Margin="10,11,10,0" VerticalAlignment="Top"/>
+        
+        <Label x:Name="way" Grid.Column="2" Content="в пути 2 часа 55 минут"  Margin="45,35,63,0" VerticalAlignment="Top" HorizontalContentAlignment="Center"/>
 
 
 
